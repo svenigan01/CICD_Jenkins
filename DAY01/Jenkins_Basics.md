@@ -67,3 +67,23 @@ Teamcity
 Other than Jenkins - what tool you know - Github actions
 
 
+===============
+
+Installing Jenkins link: https://www.jenkins.io/doc/book/installing/linux/#debianubuntu
+
+Refer to Linux flavor based on your version
+Debian/Ubuntu
+Fedora
+Red Hat Enterprise Linux and derivatives
+
+- Install Jenkins as root user
+- After install start Jenkins using
+  sudo systemctl start jenkins
+- Status check
+  sudo systemctl status jenkins
+
+From EC2 if you restart the Jenkins node, if ElasticIP is not enabled, the public IP address will be automatically updated - In real-time there is no need to restart Jenkins and always ElasticIP is enabled to keep same IP.
+
+Jenkins server default directory: /var/lib/jenkins -> It has all tools, plugins etc.
+
+
